@@ -1,0 +1,44 @@
+        #Common Syntax for all
+        #tagname[Attribute='Attribute_Value']
+        #element = driver.find_element(By.CSS_SELECTOR,'input[id="login-input"]')
+
+        #For select by id use # symbol
+        #element = driver.find_element(By.CSS_SELECTOR,'input#login-input')
+
+        # For select by class use .symbol
+        #element = driver.find_element(By.CSS_SELECTOR,'input.email-login-box')
+
+        #For advance serach we can also combine ID and Class with Attribute
+        #tagname.className[Attribute='Attribute_Value]
+        #tagname.#idNAme[Attribute='Attribute_Value]
+        #element = driver.find_element(By.CSS_SELECTOR,'input.yt-sme-mobile-input[placeholder="Email ID / Mobile Number"]')
+
+        #CSS_Selector_Substring_Matching
+        # ^Sign - Signify's the prefix of text
+        # Eg: input[name^='country_c']
+        # $Sign - Signify's the Suffix of text
+        # Eg: input[name$='y_Country']
+        # *Sign - Signify's the Substring of text
+        # Eg: inout[name*='try_uv']
+
+        # Finding Direct Child or Sub - child Elements
+        # For Direct child use ( > )
+        # eg: tagname[attribute = 'attribute_Value']>tagname[attribute = 'attribute_Value']
+        # For Child or Sub Child use blank space ( )
+        # eg: tagname[attribute = 'attribute_Value'] tagname[attribute = 'attribute_Value']
+
+        # Next Sibling | Adjacent Sibling Combinator
+        # Next sibling only select using ( + ) it selects only immediate sibling
+        # eg: tagname[attribute = 'attribute_Value']+tagname
+
+        # First-Child, Last-Child, Nth-Child, Nth-Last-Child
+        # eg: tagname[attribute = 'attribute_Value']>:First-Child
+        # eg: tagname[attribute = 'attribute_Value']>:Last-Child
+        # eg: tagname[attribute = 'attribute_Value']>:Nth-Child(no)
+        # eg: tagname[attribute = 'attribute_Value']>:Nth-Last-Child(no)
+
+        # First-of-type, Last-of-type, Nth-of-type()
+        # eg: tagname[attribute = 'attribute_Value']>tagname : First-of-type
+        # eg: tagname[attribute = 'attribute_Value']>tagname : Last-of-type
+        # eg: tagname[attribute = 'attribute_Value']>tagname : Nth-of-type(num)
+

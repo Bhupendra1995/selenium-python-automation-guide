@@ -1,0 +1,28 @@
+Xpath Stratigies
+
+1. Starts-with  eg: XPath: //tagname[starts-with(@attribute, 'value')]
+    ends-with   eg: XPath: //tagname[ends-with(@attribute, 'value')]
+2. Contains    eg: XPath: //tagname[contains(@attribute, 'value')]
+3. text()       eg:  //tagname[text() = 'text_value']
+4. And OR operator  eg: XPath: //tagname[XPath statement-1 or XPath statement-2]
+4. And OR operator  eg: XPath: //tagname[XPath statement-1 and XPath statement-2]
+5. XPath Axes Methods | Parent, Child, Self:
+    //tagname[@attribute="value"]//parent::tagname
+    //tagname[@attribute="value"]//child::tagname
+    //tagname[@attribute="value"]//self::tagname
+
+6. Axes Method descendant, descendant-or-self:
+    //tagname[@attribute="value"]//descendant::tagname
+    //tagname[@attribute="value"]//descendant-or-self::tagname
+
+7. Axes Methods | ancestor, ancestor-or-self:
+    //tagname[@attribute="value"]//ancestor::tagname
+    //tagname[@attribute="value"]//ancestor-or-self::tagname
+
+8. XPath Axes following, following-sibling:
+    //tagname[@attribute="value"]//following::tagname
+    //tagname[@attribute="value"]//following-sibling::tagname
+
+9. XPath Axes preceding, preceding-sibling:
+    //tagname[@attribute="value"]//preceding::tagname
+    //tagname[@attribute="value"]//preceding-sibling::tagname
