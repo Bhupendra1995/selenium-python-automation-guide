@@ -1,0 +1,12 @@
+This is only for Java
+
+
+1. above()
+ex : WebElement passwordField = driver.findElement(By.id("password"));
+	 driver.findElement(RelativeLocator.with(By.tagName("input")).above(passwordField)).sendKeys("standard_user");
+below()
+toLeftOff()
+toRightOff()
+near() - 50px away from the element
+
+Similarly for all we can do in this way
